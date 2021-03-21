@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+h3.h3 {
+  text-align: center;
+  margin: 1em;
+  text-transform: capitalize;
+  font-size: 1.7em;
+}
+
+/********************* shopping Demo-1 **********************/
+.product-grid {
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  padding: 0 0 72px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.product-grid .product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-grid .product-discount-label,
+.product-grid .product-new-label {
+  color: #fff;
+  background-color: #ef5777;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.product-grid .product-discount-label {
+  background-color: #333;
+  left: auto;
+  right: 0;
+}
+
+@media only screen and (max-width: 990px) {
+  .product-grid {
+    margin-bottom: 30px;
+  }
+}
